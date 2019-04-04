@@ -32,8 +32,12 @@ public class RestController {
     @GetMapping(path = "find")
     public ResponseEntity<CityDto> getByPrice(@RequestParam(value = "budget") Integer budget, @RequestParam(value = "transport") String transport, @RequestParam(value = "twoWay") boolean twoWay) {
 
+        if(twoWay) {
+            budget /= 2;
+        }
+
         City city = cityService.getFurthestCity(budget, convertToTransport(transport));
-        CityDto cityDto = assembler.convertToCityDto(city, convertToTransport(transport));
+        CityDto cityDto = assembler.convertToCityDto(city, convertToTransport(transport), twoWay);
 
         return new ResponseEntity<>(cityDto, HttpStatus.OK);
     }

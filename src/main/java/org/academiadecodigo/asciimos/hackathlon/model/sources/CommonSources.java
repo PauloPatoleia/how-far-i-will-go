@@ -1,4 +1,4 @@
-package org.academiadecodigo.asciimos.hackathlon.model;
+package org.academiadecodigo.asciimos.hackathlon.model.sources;
 
 public class CommonSources {
     private String hotels;

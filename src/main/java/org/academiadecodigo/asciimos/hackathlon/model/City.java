@@ -1,5 +1,7 @@
 package org.academiadecodigo.asciimos.hackathlon.model;
 
+import org.academiadecodigo.asciimos.hackathlon.model.sources.CommonSources;
+
 import java.util.HashMap;
 import java.util.Map;
 

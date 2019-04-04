@@ -6,7 +6,7 @@ import org.springframework.stereotype.Component;
 
 @Component
 public class Assembler {
-    public CityDto convertToCityDto(City city, Transport transport) {
+    public CityDto convertToCityDto(City city, Transport transport, boolean twoWay) {
         CityDto cityDto = new CityDto();
 
         cityDto.setName(city.getName());
@@ -17,6 +17,7 @@ public class Assembler {
 
         // DTO TIME MAPS <3
         cityDto.setCost(city.getCostByTransport(transport));
+
         cityDto.setRouteMap(city.getRouteMapByTransport(transport));
 
         // DTO TIME INSTANCE <3
