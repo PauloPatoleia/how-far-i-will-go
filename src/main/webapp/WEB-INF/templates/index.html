@@ -361,6 +361,7 @@
             $(".submit").click(function () {
 
                 var budget = ($(".line-budget-input").val() > 21474836471 ? 21474836471 : $(".line-budget-input").val());
+                if(budget < 0) return;
                 var transport = $('.fa-car').hasClass('selected') ? "car" : "bus";
 
                 if (transport == "bus") {
@@ -377,6 +378,7 @@
             })
 
             function renderResult(result) {
+
 
                 $(".main-form").remove()
                 console.log(result);
