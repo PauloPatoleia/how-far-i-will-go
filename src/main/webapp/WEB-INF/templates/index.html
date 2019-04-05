@@ -184,10 +184,6 @@
 
 <body>
 
-<audio autoplay preload='auto' loop id="myAudio">
-    <source src="http://localhost:8080/hackathlon/society.mp3" type="audio/mp3">
-</audio>
-
 <div class="">
 
     <div class="row center">
@@ -364,7 +360,7 @@
 
             $(".submit").click(function () {
 
-                var budget = $(".line-budget-input").val();
+                var budget = ($(".line-budget-input").val() > 21474836471 ? 21474836471 : $(".line-budget-input").val());
                 var transport = $('.fa-car').hasClass('selected') ? "car" : "bus";
 
                 if (transport == "bus") {
@@ -397,14 +393,6 @@
                 $(".itinerary").attr("href", result.routeMap)
                 $(".hotel").attr("href", result.hotels)
                 $(".restaurant").attr("href", result.restaurants)
-
-                $("#itButton").click(function () {
-
-                    $.ajax({
-                        url: result.routeMap
-                    });
-
-                })
 
             }
 
