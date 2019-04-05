@@ -3,7 +3,6 @@ package org.academiadecodigo.asciimos.hackathlon.dto;
 public class CityDto {
 
     private String name;
-
     private Double cost;
 
     private int time;
