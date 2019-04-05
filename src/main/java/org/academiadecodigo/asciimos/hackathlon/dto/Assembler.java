@@ -14,10 +14,10 @@ public class Assembler {
         cityDto.setAvgDailyCost(city.getAvgDailyCost());
         cityDto.setAvgSleepCost(city.getAvgSleepCost());
         cityDto.setTime(city.getTime());
+        cityDto.setTemperature(city.getTemperature());
 
         // DTO TIME MAPS <3
         cityDto.setCost(city.getCostByTransport(transport));
-
         cityDto.setRouteMap(city.getRouteMapByTransport(transport));
 
         // DTO TIME INSTANCE <3

@@ -15,17 +15,19 @@ public class City {
 
     private int time;
     private int distance;
+    private int temperature;
 
     private int avgSleepCost;
     private int avgDailyCost;
 
-    public City(String name, int time, int distance, int avgSleepCost, int avgDailyCost) {
+    public City(String name, int time, int distance, int temperature, int avgSleepCost, int avgDailyCost) {
         transportMap = new HashMap<>();
         transportRouteMap = new HashMap<>();
 
         this.name = name;
         this.time = time;
         this.distance = distance;
+        this.temperature = temperature;
         this.avgSleepCost = avgSleepCost;
         this.avgDailyCost = avgDailyCost;
     }
@@ -48,6 +50,10 @@ public class City {
 
     public int getAvgDailyCost() {
         return avgDailyCost;
+    }
+
+    public int getTemperature() {
+        return temperature;
     }
 
     public String getHotels() {

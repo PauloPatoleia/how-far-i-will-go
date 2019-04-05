@@ -16,6 +16,8 @@ public class CityDto {
     private String Restaurants;
     private String routeMap;
 
+    private int temperature;
+
     public String getName() {
         return name;
     }
@@ -86,5 +88,13 @@ public class CityDto {
 
     public void setRouteMap(String routeMap) {
         this.routeMap = routeMap;
+    }
+
+    public int getTemperature() {
+        return temperature;
+    }
+
+    public void setTemperature(int temperature) {
+        this.temperature = temperature;
     }
 }
