@@ -12,6 +12,7 @@ public class City {
     private Map<Transport, Double> transportMap;
     private Map<Transport, String> transportRouteMap;
     private Map<Transport, Integer> transportTimeMap;
+
     private CommonSources commonSources;
 
     private int distance;

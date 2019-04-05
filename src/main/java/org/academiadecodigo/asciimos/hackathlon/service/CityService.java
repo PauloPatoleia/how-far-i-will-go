@@ -128,17 +128,4 @@ public class CityService {
         }
         return choosenCity;
     }
-
-    public City getCityName(String cityName) {
-        for (City city : cityList) {
-            if (city.getName().equalsIgnoreCase(cityName)) {
-                return city;
-            }
-        }
-        return null;
-    }
-
-    public City getCityPrice(int price) {
-        return null;
-    }
 }
