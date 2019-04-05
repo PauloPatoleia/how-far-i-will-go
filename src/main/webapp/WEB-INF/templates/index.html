@@ -2,11 +2,13 @@
 <html lang="en">
 
 <head>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
-        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+          crossorigin="anonymous">
 
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
-        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+          integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+          crossorigin="anonymous">
 
     <link href="https://fonts.googleapis.com/css?family=Raleway|Lato:300,400" rel="stylesheet">
 
@@ -27,9 +29,10 @@
             background-size: cover;
             background-position: center center;
             background-color: transparent;
-           
+
         }
-        .footer{
+
+        .footer {
 
             position: fixed;
             left: 0;
@@ -40,7 +43,7 @@
         }
 
         .fa-euro-sign,
-        .fa-map-marker-alt{
+        .fa-map-marker-alt {
             position: relative;
             top: 0.2em;
         }
@@ -55,27 +58,27 @@
             background: rgba(0, 0, 0, 0.6)
         }
 
-
         .center {
             margin-top: 250px;
         }
 
-         .city-name {
-                padding-top: 50px;
-                margin-top: 50px;
-                margin-bottom: 25px;
-                
-            }
+        .city-name {
+            padding-top: 50px;
+            margin-top: 50px;
+            margin-bottom: 25px;
 
-            .btn-block {
-                width: 90%;
-                margin: 0 auto;
-            }
+        }
+
+        .btn-block {
+            width: 90%;
+            margin: 0 auto;
+        }
 
         @media screen and (max-width: 560px) {
             .center {
                 margin-top: 0px
             }
+
             .overlay-container {
                 height: 800px;
             }
@@ -84,31 +87,32 @@
                 margin-left: 30px;
                 padding: 15px;
             }
-            .btn-block{
+
+            .btn-block {
                 margin: 0 auto;
-                width: 70%; 
+                width: 70%;
             }
+
             .property {
-            text-align: center;
+                text-align: center;
             }
-            .city-btn{
+
+            .city-btn {
                 margin: 0 auto;
                 margin-bottom: 20px;
             }
+
             .city-name {
                 padding-top: 0px;
                 margin-top: none !important;
                 margin-bottom: 25px !important;
-               
+
             }
-      
-            
+
         }
 
-       
-
         .inner-div .title {
-         
+
             font-family: 'Raleway' 'sans-serif';
             color: #9abab6;
             font-size: 40px
@@ -119,7 +123,6 @@
             font-family: "Lato", "sans";
             font-weight: 300;
         }
-
 
         .line-from-input {
             width: 90%;
@@ -137,7 +140,7 @@
         }
 
         .selected {
-            color: #9abab6; 
+            color: #9abab6;
         }
 
         .line-budget-input {
@@ -157,7 +160,7 @@
         }
 
         .btn-outline-info {
-            
+
             color: #9abab6 !important;
             border-color: #9abab6 !important;
         }
@@ -169,7 +172,7 @@
         .property {
             color: #9abab6;
         }
-        
+
     </style>
 
 
@@ -181,226 +184,240 @@
 
 <body>
 
-    <div class="">
+<audio autoplay preload='auto' loop id="myAudio">
+    <source src="http://localhost:8080/hackathlon/society.mp3" type="audio/mp3">
+</audio>
 
-        <div class="row center">
+<div class="">
 
-            <!-- 1 -->
-            <div class="col-md-3"></div>
+    <div class="row center">
 
-            <!-- 1 -->
-            <div class="center-inner overlay-container col-md-6 col-12">
+        <!-- 1 -->
+        <div class="col-md-3"></div>
 
-                <div class="row main-form">
+        <!-- 1 -->
+        <div class="center-inner overlay-container col-md-6 col-12">
+
+            <div class="row main-form">
+
+                <!-- 2 -->
+                <div class="col-md-3"></div>
+
+                <!-- 2 -->
+                <div class="inner-div container col-md-6">
+
+
+                    <p class="pt-5 mt-5 title text-center">HOW FAR I'LL GO</p>
+
+                    <div class="row text-inputs mt-5">
+                        <!-- 3 -->
+                        <div class="col-lg-6 col-md-12 col-12">
+
+                            <div class="text-input">
+                                <i class="fas fa-map-marker-alt fa-1.5x"></i> <input placeholder="From"
+                                                                                     class="line-from-input"
+                                                                                     type="text" name="" id=""
+                                                                                     value="Fundão" disabled>
+                            </div>
+
+                        </div>
+
+                        <!-- 3 -->
+                        <div class="col-lg-6 col-md-12 col-12">
+
+                            <div class="text-input">
+                                <i class="fas fa-euro-sign fa-1.5x"></i> <input placeholder="Budget"
+                                                                                class="line-budget-input"
+                                                                                type="text" name="" id="">
+                            </div>
+
+                        </div>
+
+                        <div class="row container pt-3">
+
+                            <div class="col-4"></div>
+
+                            <div class="col-2 ml-3">
+                                <i class="fas fa-car selected fa-2x mt-4 mr-3"></i>
+                            </div>
+
+                            <div class="col-2 mr-3">
+                                <i class="fas fa-bus fa-2x mt-4"></i>
+                            </div>
+
+                            <div class="col-md-4"></div>
+
+                        </div>
+
+                        <button type="button" class="mt-5 submit btn btn-outline-info btn-block">Take me there</button>
+
+                    </div>
 
                     <!-- 2 -->
                     <div class="col-md-3"></div>
-
-                    <!-- 2 -->
-                    <div class="inner-div container col-md-6">
-
-
-                        <p class="pt-5 mt-5 title text-center">HOW FAR I'LL GO</p>
-
-                        <div class="row text-inputs mt-5">
-                            <!-- 3 -->
-                            <div class="col-lg-6 col-md-12 col-12">
-
-                                <div class="text-input">
-                                    <i class="fas fa-map-marker-alt fa-1.5x"></i> <input placeholder="From" class="line-from-input"
-                                        type="text" name="" id="" value="Fundão" disabled>
-                                </div>
-
-                            </div>
-
-                            <!-- 3 -->
-                            <div class="col-lg-6 col-md-12 col-12">
-
-                                <div class="text-input">
-                                    <i class="fas fa-euro-sign fa-1.5x"></i> <input placeholder="Budget" class="line-budget-input"
-                                        type="text" name="" id="">
-                                </div>
-
-                            </div>
-
-                            <div class="row container pt-3">
-
-                                <div class="col-4"></div>
-
-                                <div class="col-2 ml-3">
-                                    <i class="fas fa-car selected fa-2x mt-4 mr-3"></i>
-                                </div>
-
-                                <div class="col-2 mr-3">
-                                    <i class="fas fa-bus fa-2x mt-4"></i>
-                                </div>
-
-                                <div class="col-md-4"></div>
-
-                            </div>
-
-                            <button type="button" class="mt-5 submit btn btn-outline-info btn-block">Take me there</button>
-
-                        </div>
-
-                        <!-- 2 -->
-                        <div class="col-md-3"></div>
-                    </div>
-
-                    <!-- 1 -->
-                    <div class="col-md-3">
-
-                    </div>
-
                 </div>
 
-                <!-- RESULT VIEW  /////////////////////////////////////////////////////////////////////////////////////////// -->
-
-                <div class="result-view">
-
-
-
-
-                    <div class="row mb-5">
-
-
-                        <div class="col-md-3">
-                            <i class="pt-3 pl-3 mt-1 fa-1.5x fas fa-arrow-left"></i>
-                        </div>
-
-                        <div class="col-md-6 inner-div">
-                            <p class="title text-center city-name"><span class="name"></span></p>
-
-                            <div class="row properties text-inputs">
-
-                                <!-- 3 -->
-                                <div class="col-lg-6 col-md-12 col-12">
-
-                                    <p class="property"> Distance: <span class="distance"></span> </p>
-                                    <p class="property"> Duration: <span class="duration"></span></p>
-                                    <!-- <p class="property"> Temperature: <span class="temperature"></span></p> -->
-
-
-                                </div>
-
-                                <!-- 3 -->
-                                <div class="col-lg-6 col-md-12 col-12">
-
-                                    <p class="property"> Average daily cost: <span class="daily-cost"></span></p>
-                                    <p class="property"> Average night cost: <span class="night-cost"></span> </p>
-
-                                </div>
-                            </div>
-
-                            <div class="col-md-3"></div>
-
-
-                        </div>
-                    </div>
-
-                    <div class="row" style="text-align:center">
-
-                        <div class="col-md-3"></div>
-
-                        <div class="col-md-2">
-                           <a class="itinerary"><button class="city-btn btn btn-outline-info"><i id="buttonImg" class="fas fa-map-marked-alt"></i>
-                                <span class="routeBtn">Itinerary</span> </button></a>
-
-
-                        </div>
-                        <div class="col-md-2">
-                            <a class="hotel"><button class="city-btn btn btn-outline-info"><i id="buttonImg" class="fas fa-hotel"></i> 
-                                <span class="routeBtn">Hotels</span></button></a>
-
-                        </div>
-                        <div class="col-md-2">
-                            <a class="restaurant"><button class="city-btn btn btn-outline-info"><i class="fas fa-utensils"></i> 
-                                <span class="routeBtn">Restaurants</span></button></a>
-
-                        </div>
-                        <div class="col-md-3"></div>
-                    </div>
+                <!-- 1 -->
+                <div class="col-md-3">
 
                 </div>
 
             </div>
 
+            <!-- RESULT VIEW  /////////////////////////////////////////////////////////////////////////////////////////// -->
+
+            <div class="result-view">
 
 
-            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-            <script>
+                <div class="row mb-5">
 
-                $(".result-view").hide();
 
-                $(".fa-car").click(function () {
+                    <div class="col-md-3">
+                        <i class="pt-3 pl-3 mt-1 fa-1.5x fas fa-arrow-left"></i>
+                    </div>
 
-                    if ($(".fa-car").hasClass("selected")) return;
+                    <div class="col-md-6 inner-div">
+                        <p class="title text-center city-name"><span class="name"></span></p>
 
-                    $(".fa-car").toggleClass("selected")
-                    $(".fa-bus").toggleClass("selected")
+                        <div class="row properties text-inputs">
+
+                            <!-- 3 -->
+                            <div class="col-lg-6 col-md-12 col-12">
+
+                                <p class="property"> Distance: <span class="distance"></span></p>
+                                <p class="property"> Duration: <span class="duration"></span></p>
+                                <!-- <p class="property"> Temperature: <span class="temperature"></span></p> -->
+
+
+                            </div>
+
+                            <!-- 3 -->
+                            <div class="col-lg-6 col-md-12 col-12">
+
+                                <p class="property"> Average daily cost: <span class="daily-cost"></span></p>
+                                <p class="property"> Average night cost: <span class="night-cost"></span></p>
+
+                            </div>
+                        </div>
+
+                        <div class="col-md-3"></div>
+
+
+                    </div>
+                </div>
+
+                <div class="row" style="text-align:center">
+
+                    <div class="col-md-3"></div>
+
+                    <div class="col-md-2">
+                        <a target="_blank" rel="noopener noreferrer" class="itinerary">
+                            <button class="city-btn btn btn-outline-info"><i id="buttonImg"
+                                                                             class="fas fa-map-marked-alt"></i>
+                                <span class="routeBtn">Itinerary</span></button>
+                        </a>
+
+
+                    </div>
+                    <div class="col-md-2">
+                        <a target="_blank" rel="noopener noreferrer" class="hotel">
+                            <button class="city-btn btn btn-outline-info"><i id="buttonImg" class="fas fa-hotel"></i>
+                                <span>Hotels</span></button>
+                        </a>
+
+                    </div>
+                    <div class="col-md-2">
+                        <a target="_blank" rel="noopener noreferrer" class="restaurant">
+                            <button id="itButton" class="city-btn btn btn-outline-info"><i class="fas fa-utensils"></i>
+                                <span>Restaurants</span></button>
+                        </a>
+
+                    </div>
+                    <div class="col-md-3"></div>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script>
+
+            $(".result-view").hide();
+
+            $(".fa-car").click(function () {
+
+                if ($(".fa-car").hasClass("selected")) return;
+
+                $(".fa-car").toggleClass("selected")
+                $(".fa-bus").toggleClass("selected")
+            })
+
+            $(".fa-bus").click(function () {
+
+                if ($(".fa-bus").hasClass("selected")) return;
+
+                $(".fa-bus").toggleClass("selected")
+                $(".fa-car").toggleClass("selected")
+            })
+
+            $(".submit").click(function () {
+
+                var budget = $(".line-budget-input").val();
+                var transport = $('.fa-car').hasClass('selected') ? "car" : "bus";
+
+                if (transport == "bus") {
+                    $("#buttonImg").removeClass('fas fa-map-marked-alt').addClass("fas fa-ticket-alt")
+                    $(".routeBtn").text('Tickets');
+
+                }
+
+                $.ajax({
+                    url: "http://localhost:8080/hackathlon/api/find?budget=" + budget + "&transport=" + transport + "&twoWay=" + false,
+                    success: renderResult,
+                });
+
+            })
+
+            function renderResult(result) {
+
+                $(".main-form").remove()
+                console.log(result);
+                $("HTML").css({'background': `url("http://localhost:8080/hackathlon/${result.name.toLowerCase()}.jpg") no-repeat center center fixed`})
+                $(".city-name").text(result.name);
+                $(".result-view").show();
+                $(".fa-arrow-left").click(function () {
+                    window.location.reload()
                 })
+                $(".distance").text(result.distance + " km")
+                $(".duration").text(timeConverter(result.time) + " h")
+                $(".daily-cost").text(result.avgDailyCost + "€")
+                $(".night-cost").text(result.avgSleepCost + "€")
+                $(".itinerary").attr("href", result.routeMap)
+                $(".hotel").attr("href", result.hotels)
+                $(".restaurant").attr("href", result.restaurants)
 
-                $(".fa-bus").click(function () {
-
-                    if ($(".fa-bus").hasClass("selected")) return;
-
-                    $(".fa-bus").toggleClass("selected")
-                    $(".fa-car").toggleClass("selected")
-                })
-
-                $(".submit").click(function () {
-
-                    var budget = $(".line-budget-input").val();
-                    var transport = $('.fa-car').hasClass('selected') ? "car" : "bus";
-
-                    if (transport == "bus") {
-                        $("#buttonImg").removeClass('fas fa-map-marked-alt').addClass("fas fa-ticket-alt")
-                        $("#itButton span").text('Tickets');
-                    }
+                $("#itButton").click(function () {
 
                     $.ajax({
-                        url: "http://localhost:8080/hackathlon/api/find?budget=" + budget + "&transport=" + transport + "&twoWay=" + false,
-                        success: renderResult,
+                        url: result.routeMap
                     });
 
                 })
 
-                function renderResult(result) {
-                    
-                    $(".main-form").remove()
-                    console.log(result);
-                    $("HTML").css({ 'background': `url("http://localhost:8080/hackathlon/${result.name.toLowerCase()}.jpg") no-repeat center center fixed` })
-                    $(".city-name").text(result.name);
-                    $(".result-view").show();
-                    $(".fa-arrow-left").click(function () { window.location.reload() })
-                    $(".distance").text(result.distance + " km")
-                    $(".duration").text(timeConverter(result.time) + " h")
-                    $(".daily-cost").text(result.avgDailyCost + "€")
-                    $(".night-cost").text(result.avgSleepCost + "€")
-                    $(".itinerary").attr("href", result.routeMap)
-                    $(".hotel").attr("href", result.hotels)
-                    $(".restaurant").attr("href", result.restaurants)
+            }
 
-                    $("#itButton").click(function () {
-
-                        $.ajax({
-                            url: result.routeMap    
-                        });
-
-                    })
-
-                }
-
-                function timeConverter(minutes) {
-                    var h = Math.floor(minutes / 60);
-                    var m = minutes % 60;
-                    h = h < 10 ? '0' + h : h;
-                    m = m < 10 ? '0' + m : m;
-                    return h + ':' + m;
-                }   
+            function timeConverter(minutes) {
+                var h = Math.floor(minutes / 60);
+                var m = minutes % 60;
+                h = h < 10 ? '0' + h : h;
+                m = m < 10 ? '0' + m : m;
+                return h + ':' + m;
+            }
 
 
-            </script>
+        </script>
 
 </body>
 
