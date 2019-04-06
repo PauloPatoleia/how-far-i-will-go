@@ -1,8 +1,6 @@
 package org.academiadecodigo.asciimos.hackathlon.api;
 
 import org.json.JSONObject;
-
-import java.net.MalformedURLException;
 import java.net.URL;
 
 public class WeatherAPI {
